@@ -3,10 +3,8 @@ class Niki
 {
 	static long countStrings(long n)
 	{
-	    HashMap<Long,Long> map = new HashMap<Long,Long>();
-	    HashMap<Long,Long> map1 = new HashMap<Long,Long>();
-	//	long a[] = new long [n];
-	//	long b[] = new long [n];
+	        HashMap<Long,Long> map = new HashMap<Long,Long>();
+	        HashMap<Long,Long> map1 = new HashMap<Long,Long>();
 		map.put((long)0,(long)1);
 		map1.put((long)0,(long)1);
 		for (long i = 1; i < n; i++)
@@ -21,7 +19,7 @@ class Niki
 		}
 		return (((long)map.get(n-1)+(long)map1.get(n-1))%(1000000007));
 	}
-	/* Driver program to test above function */
+	/* main program to test above function */
 	public static void main (String args[])
 	{
 	   Scanner rosha=new Scanner(System.in);
